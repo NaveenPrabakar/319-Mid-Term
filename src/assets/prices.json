@@ -1,0 +1,37 @@
+[{
+    "name" : "iPhone 16 Pro Max",
+    "price" : "$1,199",
+    "description" : "The iPhone 16 Pro Max offers a premium design with powerful performance and camera features. It combines cutting-edge technology for an exceptional user experience.",
+    "url" : "../images/iphone.jpg"
+},
+{
+    "name" : "Galaxy S25 Ultra",
+    "price" : "$1,299",
+    "description" : "The Samsung Galaxy S25 Ultra delivers top-tier performance with cutting-edge features. Its advanced camera system and display provide an immersive experience for everyday use.",
+    "url" : "../images/galaxy.jpg"
+},
+{
+    "name" : "OnePlus 13",
+    "price" : "$899",
+    "description" : "The OnePlus 13 combines powerful performance and a smooth user experience. It offers impressive cameras and display for an all-around premium smartphone experience.",
+    "url" : "../images/oneplus.jpg"
+},
+{
+    "name" : "Galaxy Z Fold 6",
+    "price" : "$1,900",
+    "description" : "The Samsung Galaxy Z Fold 6 features a foldable design that combines a large screen with portability. It offers a unique user experience for multitasking and entertainment.",
+    "url" : "../images/galaxyfold.jpg"
+},
+{
+    "name" : "Pixel 9 Pro",
+    "price" : "$999",
+    "description" : "The Google Pixel 9 Pro offers advanced AI-driven features and an exceptional camera system. It delivers a smooth user experience with integration of Google’s software.",
+    "url" : "../images/pixel.jpg"
+},
+{
+    "name" : "Galaxy A25",
+    "price" : "$299",
+    "description" : "The Samsung Galaxy A25 offers a reliable performance at an affordable price. It provides a good display, decent cameras, and long-lasting battery life for everyday use.",
+    "url" : "../images/a25.jpg"
+}
+]
