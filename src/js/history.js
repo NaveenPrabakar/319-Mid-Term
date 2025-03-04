@@ -9,13 +9,14 @@ function loadPhones(myPhones){
 
     mainContainer.innerHTML = '';
 
-    mainContainer.innerHTML = 
+    mainContainer.innerHTML =` 
         <div>
             <h3>${phone.title}</h3>
             <p>${phone.fact}</p>
             <img class= "phone-image" src="${phone.image}" alt="${phone.title}">
             <button class="next-button">Next</button>
         </div>
+        `
     ;
 
     mainContainer.querySelector('.next-button').addEventListener("click", function(){
@@ -31,12 +32,13 @@ function loadPhone1(myPhones, pos){
 
     mainContainer.innerHTML = '';
 
-    mainContainer.innerHTML = 
+    mainContainer.innerHTML = `
         <div>
             <h3>${phone.title}</h3>
             <p>${phone.fact}</p>
             <img class= "phone-image" src="${phone.image}" alt="${phone.title}">
             <button class="next-button">Next</button>
         </div>
+        `
     ;
 }
