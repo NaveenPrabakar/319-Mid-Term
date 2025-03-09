@@ -1,29 +1,46 @@
 document.getElementById("vi").addEventListener("click", function () {
-    fetch("../assets/history.json").then(response => response.json()).then(myPhones => loadPhones(myPhones))
+  fetch("../assets/history.json")
+    .then((response) => response.json())
+    .then((myPhones) => loadPhones(myPhones));
 });
 
-function loadPhones(myPhones){
-    var mainContainer = document.getElementById("vi");
+let currentIndex = 0;
 
-    mainContainer.innerHTML = '';
+function loadPhones(myPhones) {
+  var mainContainer = document.getElementById("vi");
 
-    var temptml = '';
-
-
-    for(let i = 0; i < myPhones.history.length; i++){
-        temptml += ` 
-        <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm" style="max-width: 300px; margin: auto;">
-              <img src="${myPhones.history[i].image}" class="card-img-top" alt="${myPhones.history[i].title} poster">
-              <div class="card-header py-3">
-                <h4 class="my-0 fw-normal">${myPhones.history[i].title}</h4>
-                <p class="my-0 text-muted">${myPhones.history[i].fact}>
-              </div>
-            </div>
+  function displayPhone(index) {
+    
+    var temptml = `
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm" style="max-width: 600px; margin: auto; display: flex; align-items: center;">
+          <img src="${myPhones.history[index].image}" class="card-img-top" alt="${myPhones.history[index].title} poster" style="max-width: 200px; height: auto; margin-right: 20px;">
+          <div class="card-body">
+            <h4 class="my-0 fw-normal">${myPhones.history[index].title}</h4>
+            <p class="my-0 text-muted">${myPhones.history[index].fact}</p>
           </div>
-
-        `;
-    }
- 
+        </div>
+      </div>
+    `;
     mainContainer.innerHTML = temptml;
+
+    
+    var nextButton = document.createElement("button");
+    nextButton.textContent = "Next";
+    nextButton.classList.add("btn", "btn-primary", "mt-3");
+
+    nextButton.onclick = function () {
+      if (currentIndex < myPhones.history.length - 1) {
+        currentIndex++;
+      } else {
+        currentIndex = 0;
+      }
+      displayPhone(currentIndex);
+    };
+
+    mainContainer.appendChild(nextButton);
+  }
+
+  
+  displayPhone(currentIndex);
 }

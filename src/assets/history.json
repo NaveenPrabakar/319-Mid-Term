@@ -1,19 +1,34 @@
 {
-    "history": [
-      {
-        "title": "First Ever Phone!",
-        "fact": "The first ever phone was created by Alexander Grahmn Bell",
-        "image": "../images/first.jpg"
-      },
-      {
-        "title": "Rotory Phones",
-        "fact": "Rotory Phones require the user to spin the wheel to dial the number",
-        "image": "../images/rot.png"
-      },
-      {
-        "title": "Smart Phones",
-        "fact": "Modern!",
-        "image": "../images/galaxy.jpg"
-      }
-    ]
+  "history": [
+    {
+      "title": "First Ever Phone!",
+      "fact": "In 1876, Alexander Graham Bell invented the first ever telephone, revolutionizing communication by enabling voices to be transmitted over long distances.",
+      "image": "../images/first.jpg"
+    },
+    {
+      "title": "Rotary Phones",
+      "fact": "Introduced in the early 20th century, rotary phones required users to rotate a dial to select each digit of a phone number. They were the primary method of dialing before push-button phones.",
+      "image": "../images/rot.png"
+    },
+    {
+      "title": "Push-Button Phones",
+      "fact": "In the 1960s, push-button phones replaced rotary dials. These phones used buttons to dial numbers, offering faster and easier dialing than rotary phones.",
+      "image": "../images/Screenshot 2025-03-09 171749.png"
+    },
+    {
+      "title": "Dial Phones",
+      "fact": "Wireless dial phones, introduced in the mid-20th century, marked a huge leap in convenience, allowing people to move freely while making calls without being tethered to a wall.",
+      "image": "../images/Screenshot 2025-03-02 190939.png"
+    },
+    {
+      "title": "Flip Phones",
+      "fact": "Flip phones, introduced in the late 1990s, combined portability and durability with a unique folding design. They became a symbol of early mobile phone culture and were popular before the smartphone era.",
+      "image": "../images/Screenshot 2025-03-02 191008.png"
+    },
+    {
+      "title": "Smartphones",
+      "fact": "The first smartphones, like the iPhone in 2007, combined mobile phones with computer functionality, offering features like touchscreens, internet browsing, and app stores, forever changing the way we communicate and interact with technology.",
+      "image": "../images/Screenshot 2025-03-02 191034.png"
+    }
+  ]
 }
