@@ -3,12 +3,17 @@
       {
         "title": "First Ever Phone!",
         "fact": "The first ever phone was created by Alexander Grahmn Bell",
-        "image": "../assets/first.jpg"
+        "image": "../images/first.jpg"
       },
       {
         "title": "Rotory Phones",
         "fact": "Rotory Phones require the user to spin the wheel to dial the number",
-        "image": "../assets/rot.png"
+        "image": "../images/rot.png"
+      },
+      {
+        "title": "Smart Phones",
+        "fact": "Modern!",
+        "image": "../images/galaxy.jpg"
       }
     ]
 }

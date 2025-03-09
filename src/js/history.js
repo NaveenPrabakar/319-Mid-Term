@@ -3,42 +3,27 @@ document.getElementById("vi").addEventListener("click", function () {
 });
 
 function loadPhones(myPhones){
-
     var mainContainer = document.getElementById("vi");
-    var phone = myPhones.history[0]; //the first phone
 
     mainContainer.innerHTML = '';
 
-    mainContainer.innerHTML =` 
-        <div>
-            <h3>${phone.title}</h3>
-            <p>${phone.fact}</p>
-            <img class= "phone-image" src="${phone.image}" alt="${phone.title}">
-            <button class="next-button">Next</button>
-        </div>
-        `
-    ;
-
-    mainContainer.querySelector('.next-button').addEventListener("click", function(){
-        loadPhone1(myPhones,1);
-    });
-}
+    var temptml = '';
 
 
-function loadPhone1(myPhones, pos){
-    var mainContainer = document.getElementById("vi");
-    var phone = myPhones.history[pos];
+    for(let i = 0; i < myPhones.history.length; i++){
+        temptml += ` 
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm" style="max-width: 300px; margin: auto;">
+              <img src="${myPhones.history[i].image}" class="card-img-top" alt="${myPhones.history[i].title} poster">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">${myPhones.history[i].title}</h4>
+                <p class="my-0 text-muted">${myPhones.history[i].fact}>
+              </div>
+            </div>
+          </div>
 
-
-    mainContainer.innerHTML = '';
-
-    mainContainer.innerHTML = `
-        <div>
-            <h3>${phone.title}</h3>
-            <p>${phone.fact}</p>
-            <img class= "phone-image" src="${phone.image}" alt="${phone.title}">
-            <button class="next-button">Next</button>
-        </div>
-        `
-    ;
+        `;
+    }
+ 
+    mainContainer.innerHTML = temptml;
 }
