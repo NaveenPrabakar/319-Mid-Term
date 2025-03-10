@@ -6,42 +6,38 @@ document.getElementById("author").addEventListener("click", function () {
 
 function loadauthor(myPhones) {
   var mainContainer = document.getElementById("author");
-
-  mainContainer.innerHTML = '';
+  mainContainer.innerHTML = "";
 
   var authors = myPhones.authors;
 
   var temptml = `
-    <div class="col">
-      <div class="card mb-4 rounded-3 shadow-sm" style="max-width: 300px; margin: auto;">
-        <img src="${authors[0].url}" class="card-img-top" alt="${authors[0].name} poster">
-        <div class="card-header py-3">
-          <h4 class="my-0 fw-normal">${authors[0].name}</h4>
-          <p class="my-0 text-muted">${authors[0].email}</p>
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <img src="${authors[0].url}" class="card-img-top" alt="${authors[0].name} poster">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">${authors[0].name}</h4>
+            <p class="my-0 text-muted">${authors[0].email}</p>
+          </div>
+          <div class="card-body">
+            <p class="card-text">${authors[0].description}</p>
+          </div>
         </div>
-        <div class="card-body">
-          <p class="card-text">${authors[0].description}</p>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <img src="${authors[1].url}" class="card-img-top" alt="${authors[1].name} poster">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">${authors[1].name}</h4>
+            <p class="my-0 text-muted">${authors[1].email}</p>
+          </div>
+          <div class="card-body">
+            <p class="card-text">${authors[1].description}</p>
+          </div>
         </div>
       </div>
     </div>
   `;
-
-  temptml += `
-    <div class="col">
-      <div class="card mb-4 rounded-3 shadow-sm" style="max-width: 300px; margin: auto;">
-        <img src="${authors[1].url}" class="card-img-top" alt="${authors[1].name} poster">
-        <div class="card-header py-3">
-          <h4 class="my-0 fw-normal">${authors[1].name}</h4>
-          <p class="my-0 text-muted">${authors[1].email}</p>
-        </div>
-        <div class="card-body">
-          <p class="card-text">${authors[1].description}</p>
-        </div>
-      </div>
-    </div>
-  `;
-
 
   mainContainer.innerHTML = temptml;
-
 }

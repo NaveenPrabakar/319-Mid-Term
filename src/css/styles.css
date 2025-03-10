@@ -1,20 +1,10 @@
-/*
- * Globals
- */
 
-
-/* Custom default button */
 .btn-light,
 .btn-light:hover,
 .btn-light:focus {
   color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
+  text-shadow: none; 
 }
-
-
-/*
- * Base structure
- */
 
 body {
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
@@ -24,11 +14,6 @@ body {
 .cover-container {
   max-width: 42em;
 }
-
-
-/*
- * Header
- */
 
 .nav-masthead .nav-link {
   color: rgba(255, 255, 255, .5);
@@ -78,10 +63,46 @@ body {
 }
 
 
+.fade-image:hover {
+  transform: scale(1.05);
+}
+
+
 .image-container.show {
   opacity: 1;
 }
 
 .image-container.show .fade-image {
   opacity: 1; 
+}
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+body {
+  background: linear-gradient(45deg, rgba(255, 99, 71, 0.8), rgba(0, 0, 0, 0.8)), url('../images/TJDYpZN3r8B7onh2imuNah-1200-80.jpg');
+  background-size: cover;
+  color: white;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.7); 
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.7); 
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
 }
