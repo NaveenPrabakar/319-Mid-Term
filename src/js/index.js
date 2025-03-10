@@ -13,6 +13,15 @@ document.getElementById("price").addEventListener("click", function () {
 });
 
 
+document.getElementById("create").addEventListener("click", function () {
+  window.location.href = "../html/creation.html";  
+});
+
+document.getElementById("contact").addEventListener("click", function () {
+  window.location.href = "../html/about.html";  
+});
+
+
 
 const learn = document.getElementById('learn');
 const tParagraph = document.getElementById('tParagraph');
