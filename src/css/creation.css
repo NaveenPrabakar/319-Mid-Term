@@ -37,21 +37,11 @@ body {
   border-bottom-color: #fff;
 }
 
-.carousel {
-display: flex;
-  margin-bottom: 4rem;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Ensures it takes up the full height of the viewport */
-  
-}
-
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
+#myCarousel {
+  width: 70%; 
+  margin: 0 auto;  
+  height: 1000px;
 }
 
 
-.carousel-item {
-  height: 32rem;
-}
+
