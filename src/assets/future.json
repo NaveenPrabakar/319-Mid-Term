@@ -1,0 +1,6 @@
+[
+    {
+        "title": "Future Work",
+        "description": "The project is designed to be expanded with APIs. A YouTube API can provide YouTube links to phone models, where users can learn more information about each one. An OpenAI API can generate a description of the phones. We can also integrate databases for a better storage system. We can additionally use a better framework for better UI design."
+    }
+]
