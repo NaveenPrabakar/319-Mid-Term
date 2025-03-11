@@ -51,11 +51,10 @@ body {
 
 
 body {
-  background: linear-gradient(45deg, rgba(255, 99, 71, 0.8), rgba(0, 0, 0, 0.8));
+  background: linear-gradient(45deg, rgba(255, 99, 71, 0.8), rgba(0, 0, 0, 0.8)), url('../images/TJDYpZN3r8B7onh2imuNah-1200-80.jpg');
   background-size: cover;
   color: white;
   padding: 0;
   margin: 0;
-  min-height: 100vh;
   display: flex;
 }
