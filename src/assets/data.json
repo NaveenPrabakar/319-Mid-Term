@@ -1,10 +1,44 @@
 {
-    "1": "This is the A25 model, known for its powerful performance and sleek design. A great choice for budget-conscious consumers looking for reliable performance.",
-    "2": "The Samsung Galaxy is a top-tier smartphone with advanced features like a high-quality camera, a beautiful display, and long-lasting battery life.",
-    "3": "The Galaxy Fold is a cutting-edge foldable phone that combines innovation with practicality, offering both a compact and large display in one device.",
-    "4": "The iPhone is a premium smartphone that is known for its high build quality, excellent camera, and smooth iOS ecosystem. A top choice for users who prioritize user experience.",
-    "5": "OnePlus offers flagship-level performance at a more affordable price, with a fast, smooth Oxygen OS experience and great hardware.",
-    "6": "The Google Pixel provides a pure Android experience with fast updates and exceptional camera performance. Perfect for Android enthusiasts."
+    "1": {
+        "Company name": "Samsung",
+        "Description": "Samsung is a global leader in consumer electronics and mobile technology, offering top-tier smartphones with advanced features like a high-quality camera, a beautiful display, and long-lasting battery life.",
+        "Models": "Samsung Galaxy S23, Samsung Galaxy Note 20, Samsung Galaxy Z Fold 4",
+        "Founding year": 1938,
+        "url": "../images/sam.png"
+    },
+    "2": {
+        "Company name": "Apple",
+        "Description": "Apple is a premium smartphone maker, known for its high build quality, excellent camera, and smooth iOS ecosystem. A top choice for users who prioritize user experience.",
+        "Models": "iPhone 15, iPhone 14, iPhone SE",
+        "Founding year": 1976,
+        "url": "../images/apple.png"
+    },
+    "3": {
+        "Company name": "Google",
+        "Description": "Google is known for providing a pure Android experience with fast updates and exceptional camera performance. It is perfect for Android enthusiasts.",
+        "Models": "Google Pixel 8, Google Pixel 7, Google Pixel 6",
+        "Founding year": 1998,
+        "url": "../images/google.png"
+    },
+    "4": {
+        "Company name": "OnePlus",
+        "Description": "OnePlus offers flagship-level performance at a more affordable price, with a fast, smooth Oxygen OS experience and great hardware.",
+        "Models": "OnePlus 11, OnePlus Nord 2, OnePlus 9 Pro",
+        "Founding year": 2013,
+        "url": "../images/oneplus.png"
+    },
+    "5": {
+        "Company name": "Huawei",
+        "Description": "Huawei is a leading global provider of information and communications technology (ICT) infrastructure and smart devices, known for its innovative and powerful smartphones.",
+        "Models": "Huawei P50 Pro, Huawei Mate 40 Pro,Huawei Nova 10",
+        "Founding year": 1987,
+        "url": "../images/hua.png"
+    },
+    "6": {
+        "Company name": "Xiaomi",
+        "Description": "Xiaomi is a Chinese multinational electronics company known for producing high-quality smartphones at competitive prices, alongside a wide range of other tech products.",
+        "Models": "Xiaomi Mi 13, Xiaomi Redmi Note 12, Xiaomi Mi Mix Fold",
+        "Founding year": 2010,
+        "url": "../images/mi.png"
+    }
 }
-  
-  
