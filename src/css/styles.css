@@ -93,3 +93,15 @@ body {
   display: flex;
 }
 
+.detail-text-container {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 300px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 10px;
+  display: none;
+}
+

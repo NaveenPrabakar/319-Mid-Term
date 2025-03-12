@@ -12,13 +12,16 @@ document.getElementById("price").addEventListener("click", function () {
     window.location.href = "../html/prices.html";  
 });
 
-
 document.getElementById("create").addEventListener("click", function () {
   window.location.href = "../html/creation.html";  
 });
 
 document.getElementById("contact").addEventListener("click", function () {
   window.location.href = "../html/about.html";  
+});
+
+document.getElementById("future").addEventListener("click", function () {
+  window.location.href = "../html/future.html";  
 });
 
 
@@ -38,6 +41,20 @@ function typeText() {
     setTimeout(typeText, 50); 
   }
 }
+
+function displayDetails(ty){
+
+  fetch('../assets/data.json')
+    .then(response => response.json())
+    .then(d => loads(ty, d));
+}
+
+function loads(ty, d){
+  const detail = document.getElementById('detail-text');
+  detail.textContent = d[ty];
+  detail.style.display = 'block';
+}
+
 
 learn.addEventListener('click', function() {
   tParagraph.style.display = 'block'; 

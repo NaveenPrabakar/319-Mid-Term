@@ -5,7 +5,7 @@ fetch('../assets/future.json')
 
 function loadFuture(data){
 
-    mainContainer = document.getElementById("future");
+    mainContainer = document.getElementById("futures");
     addData = document.createElement("div");
 
     title = data[0].title;
