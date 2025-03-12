@@ -1,60 +1,47 @@
 fetch('../assets/prices.json')
     .then(response => response.json())
-    .then(myPhones => loadPhones(myPhones));
+    .then(descriptions => loadInformation(descriptions));
 
 
-function loadPhones(myPhones) {
-    var mainContainer = document.getElementById("col");
-
-    var checkboxes = [];
-    var cards = [];
-    let i = 1;
-
-    for (let phone of myPhones) {
+function loadInformation(descriptions) {
     
-        let checkbox = "checkbox" + i.toString();
-        let card = "card" + i.toString();
-        console.log(phone);
-        let AddPhone = document.createElement("div");
-        AddPhone.classList.add("col");
+    let num, name, step, description, url, mainContainer, addStep;
 
-        let name = phone.name;
-        let price = phone.price;
-        let description = phone.description;
-        let url = phone.url;
-
-        AddPhone.innerHTML = `
-        <input type="checkbox" id=${checkbox} class="form-check-input">
-            <label for=${checkbox} class="form-check-label">Show Phone #${i}</label>
-            <div id=${card} class="card shadow-sm" style="width : 200px">
-                <img src=${url} class="card-img-top" alt="...""></img>
-                <div class="card-body" style="font-size : 15px">
-                    <p class="card-text"> <strong>${name}</strong></p> 
-                    <p class="card-text"> ${description}</p> 
-                    <p class="card-text"> ${price}</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                    </div>
-                </div>
-            </div>
-        `;
-
-        mainContainer.appendChild(AddPhone);
-        let cbox = document.getElementById(checkbox);
-        checkboxes.push(cbox);
-        let ccard = document.getElementById(card);
-        cards.push(ccard);
-        cards[i - 1].style.display = 'none';
-        i = i + 1;
+    for (let i = 0; i < 6; i++){
+        switch (i){
+            case 0:
+                num = "one";
+                break;
+            case 1:
+                num = "two";
+                break;
+            case 2:
+                num = "three";
+                break;
+            case 3:
+                num = "four";
+                break;
+            case 4:
+                num = "five";
+                break;
+            case 5:
+                num = "six";
+        }
+        mainContainer = document.getElementById(num);
+        addStep = document.createElement("div");
+    
+        name = descriptions[i].name;
+        price = descriptions[i].price;
+        description = descriptions[i].description;
+        url = descriptions[i].url;
+    
+        addStep.innerHTML = `
+            <p style="padding: 20px; font-size: 25px">${name}</p>  
+            <img src=${url} class="card-img-top" style="width: 300px" alt="..."">  
+            <p style="padding-top: 20px; font-size: 20px"> ${description}</p>  
+            <p style="font-size: 20px"> ${price}</p> 
+            `;
+        mainContainer.appendChild(addStep); 
     }
-    checkboxes.forEach((checkboxParam, index) => 
-        {console.log(index);
-        checkboxParam.addEventListener('change', () => {
-            if (checkboxParam.checked) {
-                cards[index].style.display = 'block';
-            } else {
-                cards[index].style.display = 'none';
-            }
-        });
-    });
 }
 

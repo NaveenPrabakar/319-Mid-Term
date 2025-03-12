@@ -13,6 +13,15 @@ body {
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 
+body {
+  background: linear-gradient(45deg, rgba(255, 99, 71, 0.8), rgba(0, 0, 0, 0.8)), url('../images/TJDYpZN3r8B7onh2imuNah-1200-80.jpg');
+  background-size: cover;
+  color: white;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
 .cover-container {
   max-width: 42em;
 }
@@ -37,12 +46,14 @@ body {
   border-bottom-color: #fff;
 }
 
-
-body {
-  background: linear-gradient(45deg, rgba(255, 99, 71, 0.8), rgba(0, 0, 0, 0.8)), url('../images/TJDYpZN3r8B7onh2imuNah-1200-80.jpg');
-  background-size: cover;
-  color: white;
-  padding: 0;
-  margin: 0;
+nav {
   display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#myCarousel {
+  width: 70%; 
+  margin: 0 auto;  
+  height: 1000px;
 }
