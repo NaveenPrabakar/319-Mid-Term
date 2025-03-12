@@ -34,9 +34,11 @@ function loadInformation(descriptions) {
         step = descriptions[i].step;
         description = descriptions[i].description;
         url = descriptions[i].url;
+        time = descriptions[i].time;
     
         addStep.innerHTML = `
-            <p style="padding: 30px; font-size: 25px"> Step ${step}: ${name}</p>  
+            <p style="padding-top: 30px; font-size: 25px"> Step ${step}: ${name}</p>
+            <p style="padding-bottom: 30px; font-size: 25px">${time}</p>   
             <img src=${url} class="card-img-top" style="width: 400px" alt="..."">  
             <p style="padding: 20px"> ${description}</p>  
             `;

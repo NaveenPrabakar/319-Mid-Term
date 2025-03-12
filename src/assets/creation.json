@@ -2,36 +2,42 @@
     {
         "step": "1",
         "name": "Conceptualization",
+        "time": "1-2 months",
         "description": "During this stage, companies undertake extensive research to determine the latest market trends and consumer preferences. Designers focus on the phone’s size, screen display, camera, processors, and software capabilities.",
         "url": "../images/page1.jpg"
     },
     {
         "step": "2",
         "name": "Software Development",
+        "time": "3-6 months",
         "description": "The software development team begins developing and designing the software that will power the phone. The software developers create an operating system to run on the mobile phone, and a team of designers develops the user interface to determine how the phone’s touch screen responds to touches and swipes. ",
         "url": "../images/page2.jpg"
     },
     {
         "step": "3",
         "name": "Hardware Development",
+        "time": "4-8 months",
         "description": "The hardware development team works to develop the physical components of the mobile phone. The hardware team designs and assembles the various components such as the motherboard, processors, camera, battery, and screens.",
         "url": "../images/page3.jpg"
     },
     {
         "step": "4",
         "name": "Prototyping",
+        "time": "2-4 months",
         "description": "The hardware and software development teams now come together to integrate the different parts into a complete prototype. The integration process involves assembling the phone’s hardware and software into a single unit and testing the functionality of the device. ",
         "url": "../images/page4.jpg"
     },
     {
         "step": "5",
         "name": "Sourcing The Components",
+        "time": "1-3 months",
         "description": " The next stage is sourcing the components, which involves getting the components from global suppliers. The parts are checked for quality, and nonconforming parts are rejected.",
         "url": "../images/page5.jpg"
     },
     {
         "step": "6",
         "name": "Assembly",
+        "time": "1-2 months",
         "description": "The next stage is assembly, which begins with screen installation, where glass is installed onto the plastic, and the touch sensor is connected. The next steps involve battery, camera and processor installation and the process of connecting to the motherboard.",
         "url": "../images/page6.jpg"
     }
