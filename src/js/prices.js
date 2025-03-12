@@ -5,7 +5,7 @@ fetch('../assets/prices.json')
 
 function loadInformation(descriptions) {
     
-    let num, name, step, description, url, mainContainer, addStep;
+    let num, name, step, description, url, mainContainer, addStep, link;
 
     for (let i = 0; i < 6; i++){
         switch (i){
@@ -34,12 +34,14 @@ function loadInformation(descriptions) {
         price = descriptions[i].price;
         description = descriptions[i].description;
         url = descriptions[i].url;
+        link = descriptions[i].link;
     
         addStep.innerHTML = `
             <p style="padding: 20px; font-size: 25px">${name}</p>  
             <img src=${url} class="card-img-top" style="width: 300px" alt="..."">  
             <p style="padding-top: 20px; font-size: 20px"> ${description}</p>  
-            <p style="font-size: 20px"> ${price}</p> 
+            <p style="font-size: 20px"> ${price}</p>
+            <a href="${link}" style="font-size: 20px; font-color : white;">BUY</a>
             `;
         mainContainer.appendChild(addStep); 
     }
